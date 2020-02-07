@@ -1,6 +1,6 @@
 #  written by kylesim
 from argparse import ArgumentParser
-from sklearn.datasets.samples_generator import make_blobs
+from sklearn.datasets import make_blobs
 
 def get_param():
 	parser = ArgumentParser()

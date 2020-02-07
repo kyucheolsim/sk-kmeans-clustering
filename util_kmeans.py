@@ -13,7 +13,7 @@ def load_data(data_path, labeled):
 			tokens = line.split('\t')
 			if labeled is True:
 				y.append(int(tokens.pop(-1)))
-			X.append(map(float, tokens))
+			X.append(list(map(float, tokens)))
 	return X, y
 
 
